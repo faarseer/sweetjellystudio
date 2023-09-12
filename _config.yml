@@ -1,13 +1,13 @@
 title: "SWeetJelly Studio"
 email: sweetjellystudio@gmail.com
 timezone: UTC+9
-baseurl: "/affiliates-jekyll-theme"
+baseurl: ''
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: SeWoong
+author: Sewoong
 paginate: 30
-disqus:
+disqus: ''
 locale: en_us
 lang: en_us
 feed_items: 10
@@ -25,8 +25,8 @@ ganalytics:
 # Authors
 authors:
   sal:
-    name: SeWoong
-    display_name: SeWoong
+    name: Sewoong
+    display_name: Sewoong
     avatar: 'assets/images/sal.png'
     email: everforeseeing@gmail.com
     web: https://www.sweetjellystudio.com/about/
