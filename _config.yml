@@ -1,13 +1,13 @@
-title: "Affiliates"
-email: wowthemesnet@gmail.com
-timezone: UTC
+title: "SWeetJelly Studio"
+email: sweetjellystudio@gmail.com
+timezone: UTC+9
 baseurl: "/affiliates-jekyll-theme"
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: Sal
+author: SeWoong
 paginate: 30
-disqus: 'demowebsite'
+disqus:
 locale: en_us
 lang: en_us
 feed_items: 10
@@ -20,18 +20,18 @@ kramdown:
 sass:
   sass_dir: _sass
   style: :compressed
-ganalytics: UA-113961478-1
+ganalytics:
 
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
+    name: SeWoong
+    display_name: SeWoong
     avatar: 'assets/images/sal.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    email: everforeseeing@gmail.com
+    web: https://www.sweetjellystudio.com/about/
+    twitter:
+    description: "Thank you for coming. This is SWeetJelly Game Dev Studio"
   john:
     name: John
     display_name: John
@@ -43,9 +43,9 @@ authors:
 
 # Social
 social:
-  instagram: https://www.instagram.com/bootstrapstarter/
-  facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
-  twitter: https://twitter.com/bstartercom
+  instagram:
+  facebook:
+  twitter:
 
 # Plugins
 plugins: 
