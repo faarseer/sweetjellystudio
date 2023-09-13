@@ -30,22 +30,23 @@ authors:
     avatar: 'assets/images/sal.png'
     email: everforeseeing@gmail.com
     web: https://www.sweetjellystudio.com/about/
-    twitter:
     description: "Thank you for coming. This is SWeetJelly Game Dev Studio"
-  john:
-    name: John
-    display_name: John
-    avatar: 'assets/images/john.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+#  john:
+#    name: John
+#    display_name: John
+#    avatar: 'assets/images/john.png'
+#    email: wowthemesnet@gmail.com
+#    web: https://www.wowthemes.net/category/jekyll-themes/
+#    twitter: https://twitter.com/wowthemesnet
+#    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
 # Social
 social:
   instagram:
   facebook:
-  twitter:
+  idus:
+  kakaotalk:
+  discord:
 
 # Plugins
 plugins: 
