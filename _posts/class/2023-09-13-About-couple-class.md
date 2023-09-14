@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "About gift class"
-categories: [class]
+title:  "About couple class"
+author: Sewoong
+categories: [ class ]
 image: assets/images/1.jpg
 ---
 
