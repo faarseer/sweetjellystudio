@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "클래스 소개"
-categories: [class]
+title:  "About Class"
+author: Sewoong
+categories: [ class ]
 image: assets/images/1.jpg
 featured: true
 ---
@@ -16,8 +17,14 @@ featured: true
 
 [With Idea][idea-class]
 
-[basic-class]: {{site.baseurl}}/About-basic-class/
+테스트 페이지 입니다.
+
+[basic-class]: {% post_url /class/2023-09-13-About-basic-class %}
+
 [intermediate-class]: {{site.baseurl}}/About-Intermediate-class/
+
 [couple-class]: {{site.baseurl}}/About-Couple-class/
+
 [gift-class]: {{site.baseurl}}/About-Gift-class/
+
 [idea-class]: {{site.baseurl}}/About-Idea-class/

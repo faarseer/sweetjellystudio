@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "About idea class"
-categories: [class]
+author: Sewoong
+categories: [ class ]
 image: assets/images/1.jpg
 ---
 

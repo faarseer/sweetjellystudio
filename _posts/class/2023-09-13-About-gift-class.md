@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "About intermediate class"
-categories: [class]
+title:  "About gift class"
+author: Sewoong
+categories: [ class ]
 image: assets/images/1.jpg
 ---
 
