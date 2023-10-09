@@ -20,7 +20,7 @@ image: assets/images/thumbnail-basic-maze.jpg
 
 ---
 
-![](assets/images/maze-visual-scripting.png)
+![maze-visual-scripting](assets/images/maze-visual-scripting.png)
 
 > 코드를 사용하지 않습니다.
 
@@ -32,7 +32,7 @@ image: assets/images/thumbnail-basic-maze.jpg
 
 ---
 
-![](assets/images/maze-level-editor.png)
+![maze-level-editor](assets/images/maze-level-editor.png)
 
 > 게임 레벨을 직접 만들어보자!
 

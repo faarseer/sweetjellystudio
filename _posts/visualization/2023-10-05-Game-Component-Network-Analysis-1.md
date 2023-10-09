@@ -87,9 +87,9 @@ one way links from effect to card.
 
 ## 결과
 
-![](assets/game-analysis/slaythespire-ironclad-attack-network.png)
+![attack-network](assets/game-analysis/slaythespire-ironclad-attack-network.png)
 
-![](assets/game-analysis/slaythespire-ironclad-skill-network.png)
+![skill-network](assets/game-analysis/slaythespire-ironclad-skill-network.png)
 
 공격 지향적인 카드의 개수가 많고, 정직하게 강한 카드들이 많다는 것, 높은 밸류의 공격 카드들이 많다는 것. 조건들이 특수하지 않고 범용성이 높다는 것.
 
@@ -123,17 +123,17 @@ one way links from effect to card.
 
 외곽에 위치한 효과들이 많은데, 덱 빌딩 게임의 특성상 한 카드가 여러가지 효과를 가지지만 카드들의 특성을 나타내기 위해 조금 개성있는 효과들이 같이 존재
 
-![](assets/game-analysis/slaythespire-ironclad-degree-rank.png)
+![degree-rank](assets/game-analysis/slaythespire-ironclad-degree-rank.png)
 
-![](assets/game-analysis/slaythespire-ironclad-degree-histogram.png)
+![histogram-rank](assets/game-analysis/slaythespire-ironclad-degree-histogram.png)
 
 각 중심성 분석 별 효과 탑 5, 카드 탑 5 리스트
 
 히스토그램, 랭크를 통한 노드의 연결 개수가 엄청 많지는 않음. 단조로운 편
 
-![](assets/game-analysis/slaythespire-ironclad-network-degree-centrality.png)
-![](assets/game-analysis/slaythespire-ironclad-network-betweenness-centrality.png)
-![](assets/game-analysis/slaythespire-ironclad-network-eigenvector-centrality.png)
+![degree-centrality](assets/game-analysis/slaythespire-ironclad-network-degree-centrality.png)
+![betweenness-centrality](assets/game-analysis/slaythespire-ironclad-network-betweenness-centrality.png)
+![eigenvector-centrality](assets/game-analysis/slaythespire-ironclad-network-eigenvector-centrality.png)
 
 EigenVector 중심성 분석을 통해 카드들을 골라낼 수 있다는 점. 한 카드가 여러가지 효과를 가진다는 것을 명확히 보여줌. 코어 효과들이 존재.
 
