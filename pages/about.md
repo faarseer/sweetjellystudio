@@ -5,10 +5,14 @@ permalink: "/about/"
 image: assets/images/screenshot.png
 ---
 
-This website is a demonstration to see **Affiliates Jekyll theme** in action. 
+Thank you for coming!
 
-The theme is compatible with Github pages. This demo is created with Github Pages and hosted with Github. 
+This is SWeet Jelly Studio.
 
-Everything is ready for your quick setup: Blog, Categories, About, Privacy Policy, Terms of Use, Contact form, Mailchimp
+We develop mobile **casual** game.
 
-[Get it here](https://bootstrapstarter.com/jekyll-theme-memoirs/)
+Also provide offline 101 classes for whom wants to make game!
+
+If you like to learn how to make game, [Click here!][about-class]
+
+[about-class]: {% post_url /2023-09-13-About-class %}

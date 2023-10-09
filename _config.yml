@@ -5,7 +5,7 @@ baseurl: ''
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: Sewoong
+author: SweetJelly
 paginate: 30
 disqus: 'www-sweetjellystudio-com'
 locale: en_us
@@ -25,10 +25,10 @@ ganalytics:
 # Authors
 authors:
   sal:
-    name: Sewoong
-    display_name: Sewoong
+    name: SWeetJelly
+    display_name: SWeetJelly
     avatar: 'assets/images/sal.png'
-    email: everforeseeing@gmail.com
+    email: sweetjellystudio@gmail.com
     web: https://www.sweetjellystudio.com/about/
     description: "Thank you for coming. This is SWeetJelly Game Dev Studio"
 #  john:
@@ -44,7 +44,6 @@ authors:
 social:
   instagram:
   facebook:
-  idus:
   kakaotalk:
   discord:
 
