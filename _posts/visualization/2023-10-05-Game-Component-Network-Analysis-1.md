@@ -17,7 +17,7 @@ featured: true
 
 노드가 얼마나 많은 엣지와 연결되어있는지를 Degree 라고 하고, 표준화된 값으로 나타내기 위해 `n-1`, `n` 은 노드의 개수, 로 나누어 주면 Degree Centrality 를 구할 수 있습니다.
 
-d_{i}를 `i` 노드가 연결된 엣지의 개수라고 합시다. 그리고 n을 노드의 개수라고 하면,
+$d_{i}$를 `i` 노드가 연결된 엣지의 개수라고 합시다. 그리고 n을 노드의 개수라고 하면,
 
 $$
 D_{i} = \frac{d_{i}}{n-1}
@@ -87,7 +87,7 @@ one way links from effect to card.
 
 ## 결과
 
-![attack-network](assets/game-analysis/slaythespire-ironclad-attack-network.png)
+![attack-network](assets/game-analysis/slay-the-spire-ironclad-attack-network.png)
 
 ![skill-network](assets/game-analysis/slaythespire-ironclad-skill-network.png)
 
