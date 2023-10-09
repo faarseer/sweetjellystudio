@@ -44,5 +44,8 @@ featured: true
 ---
 
 [Maze]: {% post_url /class/2023-09-13-Basic-Class-Maze %}
-[Draw Line]: {% post_url /class/2023-09-13-Basic-Class-Draw-Line%}
-[Runner]: {% post_url /class/2023-09-13-Basic-Class-Runner%}
+[Basic-Class-Draw-Line]: {% post_url /class/2023-09-20-Basic-Class-Draw-Line %}
+[Basic-Class-Runner]: {% post_url /class/2023-09-27-Basic-Class-Runner %}
+[Extended-Class-Shooter]: {% post_url /class/2023-10-04-Basic-Class-Shooter %}
+[Extended-Class-Tower-Defense]: {% post_url /class/2023-10-11-Basic-Class-Tower-Defense%}
+[Extended-Class-Tycoon]: {% post_url /class/2023-10-18-Basic-Class-Tycoon%}
