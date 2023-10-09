@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Extended Class - TowerDefense"
+title:  "Extended Class - Tower-Defense"
 author: Sewoong
 categories: [ class , Extended]
 image: assets/images/thumbnail-class.png
