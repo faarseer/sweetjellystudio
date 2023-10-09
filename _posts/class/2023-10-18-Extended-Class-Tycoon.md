@@ -10,4 +10,4 @@ image: assets/images/thumbnail-class.png
 
 ---
 
-[go to home]: {{baseurl.site}}/home/
+[go to home]: {{baseurl.site}}/
