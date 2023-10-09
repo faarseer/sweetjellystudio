@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Network Analysis of Deck Building Game, Part 1"
+author: SWeetJelly
+categories: [ class ]
+image: assets/game-analysis/slaythespire-ironclad-network-degree-centrality.png
+featured: true
+---
+
 # Network Analysis of Deck Building Game, Part 1
 
 덱빌딩 게임 성분 네트워크 분석입니다.

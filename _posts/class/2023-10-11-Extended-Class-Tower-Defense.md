@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Extended Class - Tower-Defense"
-author: Sewoong
+author: SWeetJelly
 categories: [ class , Extended]
 image: assets/images/thumbnail-class.png
 featured: true

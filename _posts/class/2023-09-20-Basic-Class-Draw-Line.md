@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Basic Class - Draw Line"
-author: Sewoong
+author: SWeetJelly
 categories: [ class , Basic]
 image: assets/images/thumbnail-class.png
 featured: true

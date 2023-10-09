@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "About Class"
-author: Sewoong
+author: SWeetJelly
 categories: [ class ]
 image: assets/images/thumbnail-class.png
 featured: true
@@ -35,8 +35,6 @@ featured: true
 
 - [Shooter][Extended-Class-Shooter]
 
-- [Tower Defense][Extended-Class-Tower-Defense]
-
 - [Tycoon][Extended-Class-Tycoon]
 
 계속해서 추가될 예정입니다.
@@ -47,5 +45,4 @@ featured: true
 [Basic-Class-Draw-Line]: {% post_url /class/2023-09-20-Basic-Class-Draw-Line %}
 [Basic-Class-Runner]: {% post_url /class/2023-09-27-Basic-Class-Runner %}
 [Extended-Class-Shooter]: {% post_url /class/2023-10-04-Extended-Class-Shooter %}
-[Extended-Class-Tower-Defense]: {% post_url /class/2023-10-11-Extended-Class-Tower-Defense %}
 [Extended-Class-Tycoon]: {% post_url /class/2023-10-18-Extended-Class-Tycoon %}
