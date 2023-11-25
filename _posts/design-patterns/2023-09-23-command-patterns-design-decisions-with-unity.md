@@ -3,13 +3,13 @@ layout: post
 title:  "Command Pattern Design Decision with Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
-image: assets/images/6.jpg
+image: assets/images/5.jpg
 featured: true
 ---
 
 > The Command design pattern encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log quests, and support undo-able operations.
 
-![uml-command](assets/images/uml-command.png)
+![uml-command](/assets/images/uml-command.png)
 
 - Command
   - declares an interface for executing an operation

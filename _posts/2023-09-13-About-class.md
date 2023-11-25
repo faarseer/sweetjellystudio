@@ -17,7 +17,7 @@ featured: true
 
 코드를 사용하지 않습니다. 간단한 게임을 디자인하는 것이 목표입니다. 2-3시간 소모 됩니다.
 
-![thumbnail-basic-maze](assets/images/thumbnail-basic-maze.jpg)
+![thumbnail-basic-maze](/assets/images/thumbnail-basic-maze.jpg)
 
 - [Maze][Basic-Class-Maze]
 
