@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Command Pattern Design Decision with Unity"
+title:  "Command pattern with Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
