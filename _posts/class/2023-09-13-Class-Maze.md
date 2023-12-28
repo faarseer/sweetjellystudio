@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "🎮하루만에 완성하는 게임 개발 원데이 클래스🎮"
+title:  "🎮하루만에 완성하는 미로 게임 개발 원데이 클래스🎮"
 author: SWeetJelly
-categories: [ class, basic ]
-image: assets/images/class-thumbnail.png
+categories: [ class ]
+image: assets/images/Class/thumbnail-maze.png
 ---
 
 ![]({{site.baseurl}}/assets/images/Class/maze-game-illustration.png)
