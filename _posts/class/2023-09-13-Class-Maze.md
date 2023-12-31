@@ -4,6 +4,7 @@ title:  "🎮하루만에 완성하는 미로 게임 개발 원데이 클래스�
 author: SWeetJelly
 categories: [ class ]
 image: assets/images/Class/thumbnail-maze.png
+featured: true
 ---
 
 ![]({{site.baseurl}}/assets/images/Class/maze-game-illustration.png)
@@ -48,7 +49,7 @@ image: assets/images/Class/thumbnail-maze.png
 <iframe style="width:50%", height="315" src="https://youtube.com/shorts/rFNycUPWLs0?feature=share" frameborder="0" allowfullscreen></iframe>
 
 - 💡 개발자가 제작한 점점 어려워지는 미로를 클리어해보세요 ⭐⭐⭐
-- 💡 완성된 앱에 총 🎲10개의 미로🎲가 들어있습니다. 
+- 💡 완성된 앱에 총 🎲10개의 미로🎲가 들어있습니다.
 - 💡 재밌게 플레이 하시고 스스로 만든 맵을 친구에게 소개해보세요🤣
 
 ### INFO
