@@ -4,14 +4,42 @@ title:  "Decorator Pattern With Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
-featured: true
 ---
 
 ## Intro
 
-## Implementation in Unity
+Composition 을 사용하는 패턴
 
-캐릭터를 display 하는 방법에 대해
+### UML
+
+@startuml
+
+abstract Component {
+    + Operation()
+}
+
+class ConcreteComponent {
+    + Operation()
+}
+
+class Decorator {
+    + Operation()
+}
+
+class ConcreteDecorator {
+    - addedState
+    + Operation()
+    + AddedBehaviour()
+}
+
+Component <|-- ConcreteComponent
+Component <|-- Decorator
+Component --o Decorator
+Decorator <|-- ConcreteDecorator
+
+@enduml
+
+## Implementation in Unity
 
 {% highlight csharp %}
 namespace Decorator
@@ -65,7 +93,7 @@ using UnityEngine;
 
 namespace Decorator
 {
-    public class PowerUpClimb :PowerUp
+    public class PowerUpClimb : PowerUp
     {
         private Hero hero;
 
@@ -88,7 +116,7 @@ using UnityEngine;
 
 namespace Decorator
 {
-    public class PowerUpShootWeb:PowerUp
+    public class PowerUpShootWeb : PowerUp
     {
         private Hero hero;
 

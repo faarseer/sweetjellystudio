@@ -4,7 +4,6 @@ title:  "Command pattern with Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
-featured: true
 ---
 
 > The Command design pattern encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log quests, and support undo-able operations.
