@@ -6,11 +6,7 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-## Intro
-
 Composition 을 사용하는 패턴
-
-### UML
 
 @startuml
 

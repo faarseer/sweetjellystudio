@@ -4,10 +4,7 @@ title:  "Mediator Pattern With Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
-featured: true
 ---
-
-## Intro
 
 객체들의 interaction 을 encapsulation 하는 방식이다. 객체들 간의 커플링을 줄여준다.
 
@@ -18,8 +15,6 @@ OOP 의 특성 상 로직이나 책임을 적절히 분산하고 객체들을 �
 정확히는 객체가 다른 객체와의 연관성이 높아질 수록 , 즉 객체의 독립성 자체가 떨어진다면 복잡성은 높아진다.
 
 어떤 객체가 다른 associated 객체에 접근하거나 제어하는 것을 하나의 기능으로서 이러한 제어를 관리하는 객체를 생성한다면, 즉 객체의 상호작용을 캡슐화하는 객체를 설게한다면, 객체 사이의 느슨한 결합을 촉진하고 객체의 상호작용을 독립적으로 다양화할 수 있다.
-
-### UML
 
 @startuml Mediator
 class Mediator

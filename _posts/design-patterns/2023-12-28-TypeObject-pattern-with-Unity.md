@@ -6,8 +6,6 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-## Intro
-
 인스턴스 마다 개념적으로 다른 타입을 의미한다.
 
 몬스터라는 객체가 있다. 이를 다양하게 만들고 싶다. 그래서 몬스터를 상속하는 Dragon, Troll, Orc 등 여러개를 만들었다. 컴파일 후, 비 프로그래머 개발자가 Elf 를 넣고 싶다. 그러나 그러기 위해서는 Elf 를 위한 스크립트를 다시 작성해야 한다.
@@ -32,8 +30,6 @@ image: assets/images/5.jpg
 
 - 동작을 구현해두고 타입객체에서 선택하도록
 - 바이트 코드 + 인터프리터 패턴 > "동작 정의" 를 코드에서 데이터로
-
-### UML
 
 ## With UNITY
 

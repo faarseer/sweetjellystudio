@@ -6,10 +6,6 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-## INTRO
-
-## UML
-
 ## IMPLEMENTATION WITH UNITY
 
 {% highlight csharp %}

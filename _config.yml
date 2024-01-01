@@ -17,6 +17,8 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: false
   input: GFM
 sass:
   sass_dir: _sass

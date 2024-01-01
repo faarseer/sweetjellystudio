@@ -6,13 +6,9 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-## Intro
-
 서로 맞지 않는 인터페이스를 연결해주는 것을 캡슐화한 것이다.
 
 이미 결정된 인터페이스끼리 연결되어 작동중인 어플리케이션에서 호환되지 않은 인터페티이스를 가진 클래스를 쓰기 위해 호환되는 인터페이스와 호환되지 않는 인터페이스도 사용할 수 있게 해주는 것.
-
-### UML
 
 @startuml
 

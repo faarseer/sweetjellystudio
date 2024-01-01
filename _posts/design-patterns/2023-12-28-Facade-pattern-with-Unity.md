@@ -6,8 +6,6 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-## Intro
-
 ## Implementation in Unity
 
 {% highlight csharp %}
