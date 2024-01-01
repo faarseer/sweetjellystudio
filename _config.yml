@@ -1,9 +1,9 @@
 title: "SWeetJelly Studio"
 email: sweetjellystudio@gmail.com
 timezone: UTC+9
-baseurl: 'https://www.sweetjellystudio.com'
+baseurl: ''
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
+logo: 'assets/images/SweetJelly.png'
 favicon: 'assets/images/favicon.ico'
 author: SweetJelly
 paginate: 30
@@ -27,18 +27,10 @@ authors:
   sal:
     name: SWeetJelly
     display_name: SWeetJelly
-    avatar: 'assets/images/sal.png'
+    avatar: 'assets/images/SweetJelly.png'
     email: sweetjellystudio@gmail.com
     web: https://www.sweetjellystudio.com/about/
     description: "Thank you for coming. This is SWeetJelly Game Dev Studio"
-#  john:
-#    name: John
-#    display_name: John
-#    avatar: 'assets/images/john.png'
-#    email: wowthemesnet@gmail.com
-#    web: https://www.wowthemes.net/category/jekyll-themes/
-#    twitter: https://twitter.com/wowthemesnet
-#    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
 # Social
 social:
@@ -46,6 +38,7 @@ social:
   facebook:
   kakaotalk:
   discord:
+  youtube:
 
 # Plugins
 plugins: 
