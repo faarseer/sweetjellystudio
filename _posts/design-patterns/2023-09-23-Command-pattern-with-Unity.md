@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Command pattern with Unity"
+title:  "Command Pattern With Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
@@ -24,8 +24,8 @@ image: assets/images/5.jpg
 
 ## Implementation in Unity
 
-{% highlight csharp %}
-namespace CommandPattern
+```csharp
+namespace Command
 {
     /// <summary>
     /// The 'Command' class
@@ -54,10 +54,10 @@ namespace CommandPattern
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight csharp %}
-namespace CommandPattern
+```csharp
+namespace Command
 {
     /// <summary>
     /// The 'Client' class
@@ -95,10 +95,10 @@ namespace CommandPattern
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight csharp %}
-namespace CommandPattern
+```csharp
+namespace Command
 {
     /// <summary>
     /// The 'Invoker' class
@@ -122,9 +122,9 @@ namespace CommandPattern
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight csharp %}
+```csharp
 namespace CommandPattern
 {
     /// <summary>
@@ -165,4 +165,4 @@ namespace CommandPattern
         }
     }
 }
-{% endhighlight %}
+```
