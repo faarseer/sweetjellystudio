@@ -44,7 +44,7 @@ Adapter -> Adaptee
 
 캐릭터 객체를 여러 곳에 display 하는 방법을 Adapter 패턴으로 구현해보자
 
-```csharp
+{% highlight csharp %}
 namespace Adapter
 {
     /// <summary>
@@ -67,11 +67,11 @@ namespace Adapter
         }
     }
 }
-```
+{% endhighlight %}
 
 기본적인 adapter class, display 종류를 subclass 로 구현
 
-```csharp
+{% highlight csharp %}
 namespace CommandPattern
 using UnityEngine;
 
@@ -88,11 +88,11 @@ namespace Adapter
         }
     }
 }
-```
+{% endhighlight %}
 
 battle display 구현
 
-```csharp
+{% highlight csharp %}
 using UnityEngine;
 
 namespace Adapter
@@ -115,11 +115,11 @@ namespace Adapter
         }
     }
 }
-```
+{% endhighlight %}
 
 shop display 구현
 
-```csharp
+{% highlight csharp %}
 using UnityEngine;
 
 namespace Adapter
@@ -142,4 +142,4 @@ namespace Adapter
         }
     }
 }
-```
+{% endhighlight %}

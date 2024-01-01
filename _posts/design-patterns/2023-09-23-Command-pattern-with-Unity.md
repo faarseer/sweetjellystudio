@@ -24,7 +24,7 @@ image: assets/images/5.jpg
 
 ## Implementation in Unity
 
-```csharp
+{% highlight csharp %}
 namespace Command
 {
     /// <summary>
@@ -54,9 +54,9 @@ namespace Command
         }
     }
 }
-```
+{% endhighlight %}
 
-```csharp
+{% highlight csharp %}
 namespace Command
 {
     /// <summary>
@@ -95,9 +95,9 @@ namespace Command
         }
     }
 }
-```
+{% endhighlight %}
 
-```csharp
+{% highlight csharp %}
 namespace Command
 {
     /// <summary>
@@ -122,9 +122,9 @@ namespace Command
         }
     }
 }
-```
+{% endhighlight %}
 
-```csharp
+{% highlight csharp %}
 namespace CommandPattern
 {
     /// <summary>
@@ -165,4 +165,4 @@ namespace CommandPattern
         }
     }
 }
-```
+{% endhighlight %}
