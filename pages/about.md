@@ -25,4 +25,4 @@ If you have an interest in learning how to make game, [Click here!][class-maze]
 
 ---
 
-[class-maze]: {% post_url /2023-09-13-Class-Maze%}
+[class-maze]: {{site.baseurl}}/Class-Maze

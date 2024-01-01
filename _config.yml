@@ -1,7 +1,7 @@
 title: "SWeetJelly Studio"
 email: sweetjellystudio@gmail.com
 timezone: UTC+9
-baseurl: '/'
+baseurl: ''
 permalink: "/:title/"
 logo: 'assets/images/SweetJelly.png'
 favicon: 'assets/images/favicon.ico'
