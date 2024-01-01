@@ -3,7 +3,7 @@ email: sweetjellystudio@gmail.com
 timezone: UTC+9
 baseurl: ''
 permalink: "/:title/"
-logo: 'assets/images/SweetJelly.png'
+logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: SweetJelly
 paginate: 30
