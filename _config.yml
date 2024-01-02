@@ -28,7 +28,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: :compressed
-ganalytics:
+ganalytics: G-1MNRQP70K0
 
 # Authors
 authors:
@@ -42,14 +42,13 @@ authors:
 
 # Social
 social:
-  instagram:
-  facebook:
-  kakaotalk:
-  discord:
-  youtube:
+  instagram: https://www.instagram.com/sweetjellystudio
+  kakaotalk: https://open.kakao.com/o/s4NnrpZf
+  discord: https://discord.gg/fJ2c2Fgr
+  youtube: https://www.youtube.com/@SweetJelly-qi1li
 
 # Plugins
-plugins: 
+plugins:
 - jekyll-paginate
 - jekyll-sitemap
 - jekyll-feed
