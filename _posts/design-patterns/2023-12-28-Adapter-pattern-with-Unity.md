@@ -6,39 +6,27 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-서로 맞지 않는 인터페이스를 연결해주는 것을 캡슐화한 것이다.
+Adapter 패턴은, 호환되지 않는 클래스를 변형없이 사용하기 위해 호환하는 클래스를 목적에 맞게 변형하는 패턴이다.
 
-이미 결정된 인터페이스끼리 연결되어 작동중인 어플리케이션에서 호환되지 않은 인터페티이스를 가진 클래스를 쓰기 위해 호환되는 인터페이스와 호환되지 않는 인터페이스도 사용할 수 있게 해주는 것.
-
-@startuml
-
-class Client
-
-interface Target
-{
-    + Request()
-}
-
-class Adapter {
-    - adaptee
-    + Request()
-}
-
-class Adaptee {
-    + AdaptedRequest()
-}
-
-hide empty members
-
-Target <- Client
-Target <|-- Adapter
-Adapter -> Adaptee
-
-@enduml
+![]({{ site.baseurl }}/assets/images/DesignPatterns/adapter-uml.png)
 
 ## Implementation in Unity
 
-캐릭터 객체를 여러 곳에 display 하는 방법을 Adapter 패턴으로 구현해보자
+캐릭터는 여러 곳에서 다른 정보를 보여줘야 한다.
+
+만약 상점이라면, 캐릭터를 사는 결정을 도와줄 정보들을 보여줘야 한다.
+
+예를 들어, 가격은 확실히 상점에서 보여줘야 할 캐릭터 정보다.
+
+만약 전투 상황에 캐릭터의 정보를 보게 된다면, 이 때는 전투 상황에 맞는 캐릭터의 정보를 보고 싶을 것이다.
+
+예를 들어, DPS는 전투 중에 확인하고 싶은 캐릭터 정보일 것이다.
+
+이렇게 캐릭터라는 객체는 여러 곳에서 display 되면서 같은 값을 보여주지 않고 상황에 맞는 값을 보여줘야 된다.
+
+그러나 그 때마다 캐릭터-상점, 캐릭터-전투 이렇게 여러 개의 객체를 만드는 것은 비효율적이다.
+
+캐릭터 객체를 두고 display 하는 클래스를 상황에 맞게 바꾸는 Adapter 패턴을 사용해 위의 상황을 구현해보자.
 
 {% highlight csharp %}
 namespace Adapter
@@ -65,8 +53,6 @@ namespace Adapter
 }
 {% endhighlight %}
 
-기본적인 adapter class, display 종류를 subclass 로 구현
-
 {% highlight csharp %}
 namespace CommandPattern
 using UnityEngine;
@@ -74,7 +60,7 @@ using UnityEngine;
 namespace Adapter
 {
     /// <summary>
-    /// The 'Target' Class
+    /// The 'Adapter' Class
     /// </summary>
     public class CharacterDisplay
     {
@@ -86,15 +72,13 @@ namespace Adapter
 }
 {% endhighlight %}
 
-battle display 구현
-
 {% highlight csharp %}
 using UnityEngine;
 
 namespace Adapter
 {
     /// <summary>
-    /// The 'Adapter' Class implements 'Battle Display'
+    /// The 'Concrete Adapter' Class, implements 'Battle Display'
     /// </summary>
     public class CharacterBattleDisplay: CharacterDisplay
     {
@@ -113,15 +97,13 @@ namespace Adapter
 }
 {% endhighlight %}
 
-shop display 구현
-
 {% highlight csharp %}
 using UnityEngine;
 
 namespace Adapter
 {
     /// <summary>
-    /// The 'Adapter' Class implements 'Shop Display'
+    /// The 'Concrete Adapter' Class, implements 'Shop Display'
     /// </summary>
     public class CharacterShopDisplay: CharacterDisplay
     {
