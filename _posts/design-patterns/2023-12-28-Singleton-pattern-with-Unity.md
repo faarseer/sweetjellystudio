@@ -6,15 +6,9 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-@startuml Singleton
+Singleton 패턴은, 전역 접근이 가능한 오직 한개의 인스턴스를 구현하는 패턴이다.
 
-class Singleton {
-    - instance
-    - Singleton() : Constructor
-    + Instance()
-}
-
-@enduml
+![]({{ site.baseurl }}/assets/images/DesignPatterns/singleton-uml.png)
 
 ## 주의할 점
 
@@ -53,9 +47,7 @@ Log, Audio, Player, SaveManager 등 많은 객체를 전역 객체로 바꾸는 
 
 여러 객체에 대한 전역 접근을 제공하는 용도로 사용하는 객체를 따로 사용하는 것 또한 singleton 을 대신할 수 있다.
 
-## With Unity
-
-### MonoBehaviour 를 상속하는 Singleton pattern
+## Implement With Unity
 
 싱글톤 방식을 MonoBehaviour 에 어떻게 적용할 것인가
 
