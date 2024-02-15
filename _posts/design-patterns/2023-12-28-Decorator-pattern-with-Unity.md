@@ -32,7 +32,7 @@ Decorator 패턴은, Composition 을 어떻게 사용해야 할지를 가장 잘
 
 상속으로 구현한 스파이더맨의 능력을 앤트맨에게도 주기 위해서, 코드 중복이 불가피해진다.
 
-이 문제를 조금 Decorator 패턴을 사용해서 풀어보자.
+이 문제를 Decorator 패턴을 사용해서 풀어보자.
 
 {% highlight csharp %}
 namespace Decorator
