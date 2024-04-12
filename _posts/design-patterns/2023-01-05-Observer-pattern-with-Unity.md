@@ -6,23 +6,36 @@ categories: [ c#, design pattern, unity ]
 image: assets/images/5.jpg
 ---
 
-옵저버 기본 > 펍서브패턴 > c# event 설명 > 유니티 이벤트 > 유니티에서 이벤트 사용방식
+## Introduction
 
-예시 : 업적시스템 > UI 간단
-
-Observer pattern 은 어떤 객체의 상태 변화를 다른 객체들이 인지하고 작용할 수 있도록 하는 패턴이다.
+옵저버 패턴은 객체 간의 통신을 용이하게 하는 기본 디자인 패턴 중 하나입니다. Unity 같은 게임 개발 환경에서도 이 패턴은 여러 컴포넌트 간의 상태 변경과 상호작용을 관리하는 것을 크게 단순화할 수 있습니다.
 
 ![]({{ site.baseurl }}/assets/images/DesignPatterns/observer-uml.png)
 
-c# 에서는 이를 event 에서 구현하고 있는데, c# event 의 publisher, subscriber 방식과 기존의 observable, observer 에 약간의 차이점이 있다.
+- Subject
+  - knows its observers. Any number of Observer objects may observe a subject
+  - provides an interface for attaching and detaching Observer objects
+- ConcreteSubject
+  - stores state of interest to ConcreteObserver
+    - sends a notification to its observers when its state changes
+- Observer
+  - defines an updating interface for objects that should be notified of changes in a subject
+- ConcreteObserver
+  - maintains a reference to a ConcreteSubject object
+  - stores state that should stay consistent with subject's
+  - implements the Observer updating interface to keep its state consistent with the subject's
 
-c# event 의 publisher, subscriber 방식은 기존의 observer 패턴에 event handler 라는 mediator 를 추가함으로써 observable과 observer 간에 de-coupling 을 적용했다고 할 수 있다.
+## Difference between Observer pattern and Publisher-Subscriber pattern
 
-예시코드를 보면 이해하기 편하다.
+옵저버 패턴과 publisher-subscriber 패턴은 종종 디자인 패턴에서 혼용되어 사용되지만, 명확하게 다른 점이 있습니다.
+
+1. 옵저버 패턴 : 이 패턴은 객체 간에 직접적인 관계를 설정하며, 옵저버는 관찰 대상(주체)을 알고 있습니다. 관찰 대상의 상태가 변경되면, 모든 등록된 옵저버에게 직접 알립니다. 상세하게는, 옵저버는 일반적으로 업데이트된 상태를 주체로부터 묻기 때문에 조금 더 밀접하게 연결되어 있다고 할 수 있습니다.
+
+2. Publisher-Subscriber 패턴 : 이 패턴은 옵저버 패턴을 확장해 브로커 또는 메시지 큐 시스템(C#에서의 이벤트 핸들러)을 퍼블리셔(관찰 대상)와 Subscriber(옵저버) 사이에 추가합니다. 이 중개자는 메시지 또는 이벤트 통신과 배포를 처리하며, Subscriber 가 퍼블리셔의 정체를 알 필요가 없도록 함으로써 유연성과 확장성을 높였다고 할 수 있습니다.
+
+코드로 비교해봅시다.
 
 ---
-
-아래는 observer pattern 예시 코드다.
 
 {% highlight csharp %}
 using System;
@@ -241,26 +254,70 @@ namespace DotNetEvents
 }
 {% endhighlight %}
 
-해당 코드에서 볼 수 있듯이 publisher는 eventhandler를 제공함으로써 subscriber 의 존재는 알 수 없는 것을 확인할 수 있다. subscriber 는 publisher 에 dependency 가 남아있지만 publisher 의 event 를 잘 처리한다면 해결가능한 부분이다.
+해당 코드에서 볼 수 있듯이 publisher는 eventhandler를 제공함으로써 subscriber 의 존재는 알 수 없는 것을 확인할 수 있다.
 
-## Implement with Unity
+## Implement C# Event with Unity
 
-이제 유니티 event 를 들여다보자.
+간단한 업적 시스템을 만들어봅시다.
 
-기본 유니티 이벤트 설명 ...
+레벨 완료나 보스 처치와 같은 다양한 게임 동작이 업적을 트리거하는 간단한 업적 시스템을 구성해봅시다. Unity 와 C# event 를 사용해 이러한 트리거를 효과적으로 관리하고 관련 UI 컴포넌트가 적절히 업데이트되도록 알림을 받을 수 있습니다.
 
-유니티 이벤트 방식을 적용한 커스텀 이벤트 코드 설명
+Unity 에서의 기본 설정은 다음과 같습니다:
 
-업적시스템.
+1. 업적 관리자 : 업적이 잠금 해제될때 감지하는 로직을 처리합니다.
+2. UI 관리자 : 업적 관리자에 구독하고 새 업적에 대한 알림을 받을 때 UI를 업데이트 합니다.
 
-업적 종류가 많아지면서 달성 방법 또한 다양해진다.
+이 설정은 각 구성 요소가 기능을 수행하는 데 필요한 정보만큼만 알도록 해 최소 지식 원칙을 준수합니다.
 
-ref
+{% highlight csharp %}
+using System;
+using System.Collections.Generic;
 
-https://dev.to/absjabed/publisher-subscriber-vs-observer-pattern-with-c-3gpc
+namespace ObserverPatternExample
+{
+    public class AchievementSystem
+    {
+        public event EventHandler<AchievementEventArgs> OnAchievementUnlocked;
 
-https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/
+        protected virtual void NotifyAchievementUnlocked(AchievementEventArgs e)
+        {
+            OnAchievementUnlocked?.Invoke(this, e);
+        }
 
-유니티 이벤트 api 레퍼런스
+        public void UnlockAchievement(string achievementName)
+        {
+            Console.WriteLine($"Achievement unlocked: {achievementName}");
+            NotifyAchievementUnlocked(new AchievementEventArgs(achievementName));
+        }
+    }
+
+    public class AchievementEventArgs : EventArgs
+    {
+        public string AchievementName { get; }
+
+        public AchievementEventArgs(string name)
+        {
+            AchievementName = name;
+        }
+    }
+
+    public class UIAchievementNotifier
+    {
+        public void Subscribe(AchievementSystem system)
+        {
+            system.OnAchievementUnlocked += OnAchievementUnlocked;
+        }
+
+        private void OnAchievementUnlocked(object sender, AchievementEventArgs e)
+        {
+            Console.WriteLine($"Notification: Achievement '{e.AchievementName}' unlocked!");
+        }
+    }
+}
+{% endhighlight %}
 
 ---
+
+## Conclusion
+
+Unity 에서 C# event 를 활용한 디자인 패턴은 유연하고 유지 관리가 가능한 게임 아키텍처를 개발하는 데 좋은 도구입니다. 개발자는 반응성이 높고 결합이 느슨한 시스템을 만들 수 있으며, 코드 베이스를 관리하고 확장하기가 더 쉬워집니다.
