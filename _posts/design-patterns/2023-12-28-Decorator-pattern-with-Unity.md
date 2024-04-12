@@ -3,7 +3,7 @@ layout: post
 title:  "Decorator Pattern With Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
-image: assets/images/decorator-thumbnail.png
+image: assets/images/DesignPatterns/decorator-thumbnail.png
 ---
 
 게임 개발에서, Decorator 패턴은 코드의 유연성을 최대로 활용한 패턴이라고 할 수 있다. 기존 코드를 변경하지 않고도 기능을 향상시킬 수 있는 이 디자인 패턴은 게임 기능을 원활하게 확장하고 스케일링하고자 하는 개발자들에게 필수적일 것이다. 이제까지와 마찬가지로 Decorator 패턴의 개념에 대한 간단한 설명과 함께 유니티에서 어떻게 활용하면 좋을지에 대해 구현해보자.

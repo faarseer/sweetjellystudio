@@ -3,7 +3,7 @@ layout: post
 title:  "Adapter Pattern With Unity"
 author: SWeetJelly
 categories: [ c#, design pattern, unity ]
-image: assets/images/adapter-thumbnail.png
+image: assets/images/DesignPatterns/adapter-thumbnail.png
 ---
 
 ## Introduction
