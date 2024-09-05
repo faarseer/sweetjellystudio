@@ -5,24 +5,26 @@ Just customize your theme here.
 
 .section {
   width: 100%;
-  height: auto; /* 섹션의 높이를 자동으로 설정하여 이미지 비율 유지 */
+  height: 100vh; /* 뷰포트 전체 높이 */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px; /* 각 섹션 사이에 여백 추가 */
+  overflow: hidden; /* 이미지가 섹션을 넘지 않도록 숨기기 */
+  margin-bottom: 0; /* 여백 제거 */
+  position: relative; /* 이미지가 섹션 내에 위치하도록 설정 */
 }
 
 .section img {
-  width: 100%;
-  height: auto; /* 이미지 비율을 유지하며 전체 너비에 맞춤 */
+  max-width: 100%; /* 이미지 너비를 섹션의 너비에 맞춤 */
+  max-height: 100%; /* 이미지 높이를 섹션의 높이에 맞춤 */
+  width: auto; /* 이미지 비율 유지 */
+  height: auto; /* 이미지 비율 유지 */
+  display: block; /* 이미지가 블록 요소처럼 행동하도록 설정 */
 }
-
 
 @media (max-width: 768px) {
   .section {
-    height: auto; /* 모바일 화면에서 섹션의 높이를 줄임 */
+    height: 50vh; /* 모바일 화면에서 섹션의 높이를 줄임 */
   }
 }
 
