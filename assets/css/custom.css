@@ -4,7 +4,7 @@ Just customize your theme here.
 ================================================== */
 
 .section {
-  background-size: cover; /* 배경 이미지가 섹션을 완전히 덮도록 조절 */
+  background-size: contain; /* 배경 이미지가 섹션을 완전히 덮도록 조절 */
   background-position: center; /* 배경 이미지가 중앙에 위치하도록 설정 */
   background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
   width: 100%; /* 섹션이 화면 전체 너비를 차지하도록 설정 */
