@@ -8,7 +8,7 @@ topmenu:
   url: "about/"
 
 - title: Class
-  url: "categories/#class"
+  url: "class/"
 
 - title: Contact
   url: "contact/"
@@ -22,9 +22,6 @@ footermenu:
 
 - title: Privacy Policy
   url: "privacy-policy/"
-
-- title: Class
-  url: "categories/#class"
 
 - title: Contact
   url: "contact/"
