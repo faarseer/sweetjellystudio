@@ -96,18 +96,16 @@ post_class: post-template
 
         <!-- Sidebar -->
         <div class="col-sm-4">
-            <!--{% include sidebar.html %}-->
-            {% if page.toc %}
-            <nav class="post__toc" role="navigation">
-                <h2>{{ page.toc_label | default: "Table of Contents" }}</h2>
-                <ol>
-                {{ content | toc_only }}
-                </ol>
-            </nav>
-            {% endif %}
+        <nav class="post__toc" role="navigation">
+            <h2>Table of Contents</h2>
+            <ol></ol> <!-- JavaScript가 이 안에 TOC 항목을 추가합니다 -->
+        </nav>
         </div>
 
     </div>
 
 <!-- End Article
 ================================================== -->
+
+<!-- JavaScript 파일 포함 -->
+<script src="{{ '/assets/js/toc.js' | relative_url }}"></script>

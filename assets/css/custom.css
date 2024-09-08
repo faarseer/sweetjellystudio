@@ -66,24 +66,24 @@ Custom TOC
 }
 
 /* 중첩된 항목들에 대한 들여쓰기 */
-.post__toc li ul > li a {
+.post__toc li ol > li a {
   padding-left: 1.5rem;
   font-weight: normal;
 }
 
-.post__toc li ul li ul > li a {
+.post__toc li ol li ol > li a {
   padding-left: 2rem;
 }
 
-.post__toc li ul li ul li ul > li a {
+.post__toc li ol li ol li ol > li a {
   padding-left: 2.5rem;
 }
 
-.post__toc li ul li ul li ul li ul > li a {
+.post__toc li ol li ol li ol li ol > li a {
   padding-left: 3rem;
 }
 
-.post__toc li ul li ul li ul li ul li ul > li a {
+.post__toc li ol li ol li ol li ol li ol > li a {
   padding-left: 3.5rem;
 }
 
