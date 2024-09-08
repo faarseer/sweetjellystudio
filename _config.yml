@@ -1,10 +1,10 @@
 title: "SWeetJelly Studio"
 email: sweetjellystudio@gmail.com
-timezone: UTC+9
+timezone: Asia/Seoul
 baseurl: ''
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+logo: 'assets/images/icon.png'
+favicon: 'assets/images/icon.png'
 author: SweetJelly
 paginate: 30
 disqus: 'www-sweetjellystudio-com'
@@ -30,6 +30,13 @@ sass:
   style: :compressed
 ganalytics: G-1MNRQP70K0
 
+# TOC
+toc:
+  enabled: true          # TOC 기능 활성화
+  heading: "Contents"    # 목차 제목
+  min_level: 2           # 표시할 최소 제목 레벨 (h2)
+  max_level: 6           # 표시할 최대 제목 레벨 (h6)
+
 # Authors
 authors:
   sal:
@@ -54,4 +61,3 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-archives
-- jekyll-latex
