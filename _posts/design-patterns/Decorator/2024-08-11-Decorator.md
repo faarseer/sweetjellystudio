@@ -13,13 +13,13 @@ toc: true
 
 ---
 
-### Decorator 패턴이란?
+## Decorator 패턴이란?
 
 **Decorator 패턴**은 객체의 기능을 동적으로 확장할 수 있는 방법을 제공합니다. 상속을 사용하지 않고도 런타임에 새로운 기능을 추가할 수 있기 때문에, 클래스의 수정 없이도 객체의 동작을 변경하거나 확장할 수 있습니다.
 
 ---
 
-### Decorator 패턴의 주요 특징
+## Decorator 패턴의 주요 특징
 
 1. **유연성**  
    Decorator를 사용하면 기존 클래스를 수정하지 않고도 객체에 다양한 기능을 조합하여 추가할 수 있습니다. 이를 통해 코드의 유연성을 크게 높일 수 있습니다.
@@ -32,7 +32,7 @@ toc: true
 
 ---
 
-### Code Smell: Decorator 패턴이 필요한 순간
+## Code Smell: Decorator 패턴이 필요한 순간
 
 Decorator 패턴은 **Feature Envy**나 **God Object** 같은 **Code Smell**을 해결할 때 특히 유용합니다.
 
@@ -44,7 +44,7 @@ Decorator 패턴은 **Feature Envy**나 **God Object** 같은 **Code Smell**을 
 
 ---
 
-### Decorator 패턴 구현
+## Decorator 패턴 구현
 
 아래 코드는 **Decorator 패턴**을 사용해 카드를 다루는 간단한 예시입니다. 기본적인 **BattleCard** 클래스에 새로운 기능을 동적으로 추가하여 카드의 능력치를 변경할 수 있습니다.
 
@@ -118,7 +118,7 @@ public class DoubleValue : CardDecorator
 
 ---
 
-### Decorator 패턴의 활용
+## Decorator 패턴의 활용
 
 Decorator 패턴을 실제로 어떻게 활용하는지 간단한 예시를 통해 살펴보겠습니다.
 
@@ -164,7 +164,7 @@ public void Play2()
 
 ---
 
-### 마무리
+## 마무리
 
 **Decorator 패턴**은 객체의 기능을 동적으로 확장할 수 있는 강력한 도구입니다. 상속을 사용하지 않으면서도 런타임에 기능을 추가하거나 변경할 수 있어, 코드의 유연성을 크게 높일 수 있습니다. 특히 **Feature Envy**나 **God Object**와 같은 **Code Smell**을 해결하는 데 매우 효과적입니다.
 
