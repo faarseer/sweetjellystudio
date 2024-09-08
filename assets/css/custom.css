@@ -3,6 +3,93 @@ Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
 
+/* 
+Custom TOC
+========================================================================== */
+.post__toc {
+  font-family: 'Helvetica Neue', sans-serif; /* 사용할 폰트 */
+  color: #666; /* 글자 색상 */
+  background-color: #f9f9f9; /* 배경 색상 */
+  border: 1px solid #ddd; /* 테두리 색상 */
+  border-radius: 5px; /* 둥근 테두리 */
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px; /* 스크롤할 때 TOC가 고정될 위치 (상단에서 20px 아래) */
+  max-height: calc(100vh - 40px); /* 화면 높이에 맞게 최대 높이 설정 */
+  overflow-y: auto; /* 내용이 넘치면 스크롤 가능하게 */
+}
+
+@media (max-width: 768px) {
+  .post__toc {
+    display: none; /* 모바일 화면에서는 TOC 숨김 */
+  }
+}
+
+.post__toc h2 {
+  color: #fff; /* 제목 색상 */
+  font-size: 1.5rem; /* 제목 폰트 크기 */
+  background-color: #bccde7;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.post__toc .active a {
+  color: #bccde7; /* 현재 활성화된 항목의 색상 */
+  font-weight: bold; /* 활성화된 항목 강조 */
+}
+
+/* TOC 메뉴 스타일 */
+.post__toc ol, 
+.post__toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post__toc a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #999; /* 링크 색상 */
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd; /* 항목들 간의 경계선 */
+}
+
+.post__toc a:hover {
+  color: #333; /* 링크 호버 시 색상 */
+}
+
+/* 중첩된 항목들에 대한 들여쓰기 */
+.post__toc li ul > li a {
+  padding-left: 1.5rem;
+  font-weight: normal;
+}
+
+.post__toc li ul li ul > li a {
+  padding-left: 2rem;
+}
+
+.post__toc li ul li ul li ul > li a {
+  padding-left: 2.5rem;
+}
+
+.post__toc li ul li ul li ul li ul > li a {
+  padding-left: 3rem;
+}
+
+.post__toc li ul li ul li ul li ul li ul > li a {
+  padding-left: 3.5rem;
+}
+
+/* 
+Class page image
+========================================================================== */
 .section {
   width: 100%;
   height: 100vh; /* 뷰포트 전체 높이 */
@@ -10,16 +97,15 @@ Just customize your theme here.
   align-items: center;
   justify-content: center;
   overflow: hidden; /* 이미지가 섹션을 넘지 않도록 숨기기 */
-  margin-bottom: 0; /* 여백 제거 */
-  position: relative; /* 이미지가 섹션 내에 위치하도록 설정 */
+  margin-bottom: 0;
+  position: relative;
 }
 
 .section img {
-  max-width: 100%; /* 이미지 너비를 섹션의 너비에 맞춤 */
-  max-height: 100%; /* 이미지 높이를 섹션의 높이에 맞춤 */
-  width: auto; /* 이미지 비율 유지 */
-  height: auto; /* 이미지 비율 유지 */
-  display: block; /* 이미지가 블록 요소처럼 행동하도록 설정 */
+  width: auto;
+  height: 100%; /* 섹션 높이에 맞추되 비율 유지 */
+  object-fit: cover; /* 비율을 유지하면서 섹션을 꽉 채우도록 설정 */
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -27,6 +113,7 @@ Just customize your theme here.
     height: 50vh; /* 모바일 화면에서 섹션의 높이를 줄임 */
   }
 }
+
 
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }

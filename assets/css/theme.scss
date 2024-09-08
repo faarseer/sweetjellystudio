@@ -11,6 +11,60 @@ $blue:    #3d61fd !default;
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 
+/* Custom Contact
+================================================== */
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.stylish-input {
+  border: 2px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.stylish-input:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-stylish {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-stylish:hover {
+  background-color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* add additional CSS rules below */
 html {
     scroll-behavior: smooth;
@@ -134,8 +188,9 @@ small, .small {
 
 /* Pages
 ================================================== */
+
 .hero {
-    background: #fdd93d;
+    background: #bccde7;
     padding: 5rem 5rem;
 }
 
@@ -610,6 +665,6 @@ span.navigation:before {
 }
 
 .hover-opacity:hover {
-    transition: all.3s;
-    opacity:.8;
+    transition: all 0.3s;
+    opacity: 0.8;
 }

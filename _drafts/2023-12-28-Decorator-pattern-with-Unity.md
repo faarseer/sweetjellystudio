@@ -28,7 +28,7 @@ Decorator 패턴은, Inheritance 보다 Composition 의 힘을 가장 잘 보여
 
 1. 'Component' 클래스 : 이 추상 클래스는 필수 기능을 가진 Hero 를 모두 정의하며, 동적으로 확장할 수 있도록 했다.
 
-    {% highlight csharp %}
+    {% highlight csharp linenos%}
     namespace Decorator
     {
         /// <summary>
