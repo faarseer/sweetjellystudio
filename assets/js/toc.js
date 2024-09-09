@@ -34,6 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
     tocLink.href = `#${id}`;
     tocLink.textContent = header.textContent;
 
+    tocLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      
+      const headerOffset = 100; // 고정된 헤더의 높이(px), 필요에 따라 조정
+      const elementPosition = header.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    });
+
     tocItem.appendChild(tocLink);
     currentList.appendChild(tocItem);
   });
