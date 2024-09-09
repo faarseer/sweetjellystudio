@@ -4,8 +4,40 @@ Just customize your theme here.
 ================================================== */
 
 /* 
+Custom Search container
+========================================================================== */
+#search-container {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.category-group {
+  margin-bottom: 20px;
+}
+
+/* 
 Custom TOC
 ========================================================================== */
+
+/* TOC가 있는 경우: 본문을 왼쪽으로 밀어냄 */
+.with-toc .col-sm-8 {
+  margin-left: 0;
+}
+
+/* TOC가 없는 경우: 본문을 중앙에 배치 */
+.no-toc .col-sm-8 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; /* 본문 최대 너비를 설정 */
+}
+
 .post__toc {
   font-family: 'Helvetica Neue', sans-serif; /* 사용할 폰트 */
   color: #666; /* 글자 색상 */

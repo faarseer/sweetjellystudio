@@ -5,8 +5,20 @@
         {% if post.image %} <img class="rounded mb-4" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
     </a>
     <div class="card-block">
-        <h2 class="card-title h4 serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+        <h2 class="card-title h4 serif-font"><a href="{{ post.url | absolute_url }}" class="post-title">{{ post.title }}</a></h2>
         <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
+
+        <!-- 카테고리를 tags 클래스로 표시 -->
+        <div class="after-post-tags">
+            <ul class="tags">
+                {% for category in post.categories %}
+                <li>
+                    <a href="{{ site.baseurl }}/categories#{{ category | slugify }}">{{ category }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
         <div class="metafooter">
             <div class="wrapfooter small d-flex align-items-center">
                 <span class="author-meta">

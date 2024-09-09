@@ -8,7 +8,7 @@ post_class: post-template
 <!-- Begin Article
 ================================================== -->
 
-    <div class="row">
+    <div class="row {% if page.toc == true %}with-toc{% else %}no-toc{% endif %}">
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
@@ -33,7 +33,7 @@ post_class: post-template
                 <!-- End Categories -->
                 
                 <!-- Post Title -->
-                <h1 class="posttitle">{{ page.title }}</h1> 
+                <h1 class="post-title">{{ page.title }}</h1> 
                 
             </div>
 
@@ -95,12 +95,14 @@ post_class: post-template
         <!-- End Post -->
 
         <!-- Sidebar -->
+        {% if page.toc == true %}
         <div class="col-sm-4">
         <nav class="post__toc" role="navigation">
             <h2>Table of Contents</h2>
             <ol></ol> <!-- JavaScript가 이 안에 TOC 항목을 추가합니다 -->
         </nav>
         </div>
+        {% endif %}
 
     </div>
 
