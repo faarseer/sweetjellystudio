@@ -61,3 +61,11 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-archives
+
+# Defaults
+defaults:
+  - scope:
+      path: ""  # 전체 사이트에 적용
+      type: "posts"  # 모든 포스트에 적용
+    values:
+      disqus: true  # 기본값을 true로 설정
