@@ -5,6 +5,7 @@ author: SWeetJelly
 categories: [ class ]
 image: assets/images/Class/thumbnail-maze.png
 featured: true
+disqus: false
 ---
 
 <div class="section">
