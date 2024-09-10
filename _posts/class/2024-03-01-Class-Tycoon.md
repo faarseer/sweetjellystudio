@@ -5,6 +5,7 @@ author: SWeetJelly
 categories: [ class ]
 image: assets/images/Class/Tycoon Illustration 1792x1024.png
 featured : true
+disqus: false
 ---
 
 <div class="section">
@@ -19,7 +20,3 @@ featured : true
 <div class="section">
   <img src="/assets/images/Class/Tycoon Post 4.png" alt="Tycoon Post 4">
 </div>
-
----
-
-[go to home]: {{site.baseurl}}/
