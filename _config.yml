@@ -1,4 +1,4 @@
-title: "SWeetJelly Studio"
+title: "SweetJelly Studio"
 email: sweetjellystudio@gmail.com
 timezone: Asia/Seoul
 baseurl: ''
@@ -42,7 +42,7 @@ authors:
   sal:
     name: SWeetJelly
     display_name: SWeetJelly
-    avatar: 'assets/images/SweetJelly.png'
+    avatar: 'assets/images/icon.png'
     email: sweetjellystudio@gmail.com
     web: https://www.sweetjellystudio.com/about/
     description: "Thank you for coming. This is SWeetJelly Game Dev Studio"
