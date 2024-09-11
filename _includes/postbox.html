@@ -1,19 +1,25 @@
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
-<div class="card">
+<div class="card" style="background-color: var(--card-bg-color); color: var(--card-text-color);">
     <a href="{{ post.url | absolute_url }}">
-        {% if post.image %} <img class="rounded mb-4" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+        {% if post.image %}
+            <img class="rounded mb-4" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+        {% endif %}
     </a>
     <div class="card-block">
-        <h2 class="card-title h4 serif-font"><a href="{{ post.url | absolute_url }}" class="post-title">{{ post.title }}</a></h2>
-        <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
+        <h2 class="card-title h4 serif-font" style="color: var(--card-title-color);">
+            <a href="{{ post.url | absolute_url }}" class="post-title">{{ post.title }}</a>
+        </h2>
+        <p class="card-text text-muted" style="color: var(--card-meta-color);">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
 
         <!-- 카테고리를 tags 클래스로 표시 -->
         <div class="after-post-tags">
             <ul class="tags">
                 {% for category in post.categories %}
                 <li>
-                    <a href="{{ site.baseurl }}/categories#{{ category | slugify }}">{{ category }}</a>
+                    <a href="{{ site.baseurl }}/categories#{{ category | slugify }}" style="background-color: var(--card-tag-bg-color); color: var(--card-tag-text-color);">
+                        {{ category }}
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
@@ -22,8 +28,10 @@
         <div class="metafooter">
             <div class="wrapfooter small d-flex align-items-center">
                 <span class="author-meta">
-                By  <span class="post-name"> {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}, </span>             
-                on <span class="post-date">{{ post.date | date_to_string }}</span>
+                    By <span class="post-name"> 
+                        {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
+                    , </span>             
+                    on <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>               
                 <div class="clearfix"></div>
             </div>
