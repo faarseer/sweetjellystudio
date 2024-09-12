@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="about-section">
+  <!-- 회사 소개 섹션 -->
+  <section class="company-info">
+    {{ content }}
+  </section>
+
+  <!-- 팀원 소개 섹션 -->
+  <section class="team-info">
+    <h2>Meet the Team</h2>
+    {% for author in site.authors %}
+      <div class="team-member">
+        <img class="author-avatar" src="{{ site.baseurl }}/{{ author.about-img }}" alt="{{ author.display_name }}">
+        <div class="team-member-details">
+          <h3>{{ author.display_name }}</h3>
+          <p>{{ author.about-description }}</p>
+          <ul>
+            {% if author.email %}
+              <li><strong>Email:</strong> {{ author.email }}</li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+</div>

@@ -1,20 +1,18 @@
 ---
-layout: page
-title:
+layout: about
 permalink: "/about/"
-image:
 ---
 
-Thank you for coming!
-
-This is SWeet Jelly Studio.
-
-We develop mobile **casual** game and game template.
+## About SWeet Jelly Studio
 
 ---
 
-<div class="text-center mx-auto mb-5">
-  <img class="featured-image text-center mx-auto rounded" src="/assets/images/about.png">
-</div>
+쉬어가는 중간에 먹는 젤리처럼, 우리는 **가볍고 즐겁게** 플레이할 수 있는 게임을 만듭니다. 언제 어디서나 부담 없이 즐길 수 있는 **젤리 같은 게임**을 통해, 일상에 **작은 즐거움**을 더하기 위해 노력하고 있습니다.
 
-[class-maze]: {{site.baseurl}}/Class-Maze
+저희 게임은 복잡한 규칙이나 긴 플레이 타임 없이, **짧은 시간에도 충분한 재미**를 느낄 수 있도록 설계되었습니다. 게임은 **단순하지만 매력적인 경험**을 제공하여, **휴식 시간**이나 **대기 시간**에도 편안하게 즐길 수 있는 **게임**을 목표로 하고 있습니다.
+
+또한, 저희는 게임 디자인과 개발에서 **창의성과 유쾌함**을 중요하게 생각합니다. 각 게임은 플레이어에게 **소소한 기쁨**을 전달하며, 언제나 **새롭고 신선한 경험**을 제공하기 위해 최선을 다하고 있습니다.
+
+---
+
+**저희와 함께 이런 게임을 만들고 싶다면 언제든지 연락주세요!**
