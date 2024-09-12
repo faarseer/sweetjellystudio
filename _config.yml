@@ -39,13 +39,14 @@ toc:
 
 # Authors
 authors:
-  sal:
-    name: SWeetJelly
+  - name: SWeetJelly
     display_name: SWeetJelly
     avatar: 'assets/images/icon.png'
     email: sweetjellystudio@gmail.com
     web: https://www.sweetjellystudio.com/about/
-    description: "Thank you for coming. This is SWeetJelly Game Dev Studio"
+    description: "Programmer, Game Designer"
+    about-img: 'assets/images/SweetJelly-new.png'
+    about-description: "SWeetJellyStudio 개발자입니다. 게임을 만들고, 게임 개발 클래스도 진행하고 있습니다. 게임 개발에 관심이 있는 분들은 언제든지 연락주세요!"
 
 # Social
 social:
