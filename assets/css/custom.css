@@ -4,6 +4,27 @@ Just customize your theme here.
 ================================================== */
 
 /* 
+Fix 2-line Header problem under 369 px
+========================================================================== */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.25rem; /* 토글 버튼 크기 줄이기 */
+    font-size: 0.625rem; /* 폰트 크기 줄이기 */
+  }
+
+  .navbar-brand {
+    margin-right: 0.5rem; /* 브랜드와 토글 버튼 간의 여백 조정 */
+  }
+}
+
+@media (max-width: 400px) {
+  .hide-on-small {
+    display: none; /* 작은 화면에서 숨김 */
+  }
+}
+
+
+/* 
 About page
 ========================================================================== */
 
