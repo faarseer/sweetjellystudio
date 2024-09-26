@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mediator 와 Visitor 의 조합 : Visitor 패턴을 활용한 다양한 타입의 데이터 전송"
+title: "Mediator 2. Mediator 와 Visitor 의 조합"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png

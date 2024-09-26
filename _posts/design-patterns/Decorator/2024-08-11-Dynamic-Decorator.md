@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dynamic Decorator"
+title: "Decorator 2. Dynamic Decorator"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png
