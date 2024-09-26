@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Self-Managed-Visitor"
+title: "Visitor 2. Self-Managed Visitor"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png

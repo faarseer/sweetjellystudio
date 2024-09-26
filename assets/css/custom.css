@@ -350,29 +350,168 @@ Custom TOC
 /* 
 Class page image
 ========================================================================== */
-.section {
-  width: 100%;
-  height: 100vh; /* 뷰포트 전체 높이 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* 이미지가 섹션을 넘지 않도록 숨기기 */
-  margin-bottom: 0;
-  position: relative;
+
+/* class-container 안의 섹션 래퍼 스타일 */
+.class-container .class-section-wrapper {
+    width: 100%; /* 전체 가로 너비 */
+    overflow: hidden; /* 가로 스크롤 방지 */
 }
 
-.section img {
-  width: auto;
-  height: 100%; /* 섹션 높이에 맞추되 비율 유지 */
-  object-fit: cover; /* 비율을 유지하면서 섹션을 꽉 채우도록 설정 */
-  display: block;
+#class-section1 {
+    background-image: url('/assets/images/Class/Maze\ Illustration\ 1656x1656\ no\ text.png');
+    position: relative;
+    min-height: 100vh; /* 화면 전체 높이 */
+    display: flex;
+    justify-content: flex-start; /* 왼쪽으로 정렬 */
+    align-items: center;
+    padding: 20px; /* 섹션에 여백 추가 */
+}
+
+/* 섹션 2: 배경 이미지 */
+#class-section2 {
+    background-image: url('/assets/images/Class/Tycoon\ Illustration\ 1792x1024.png');
+    position: relative;
+    min-height: 100vh; /* 화면 전체 높이 */
+    display: flex;
+    justify-content: flex-end; /* 왼쪽으로 정렬 */
+    align-items: center;
+    padding: 20px; /* 섹션에 여백 추가 */
+}
+
+/* 각 섹션의 기본 스타일 */
+.class-container .class-section {
+    position: relative;  /* 오버레이가 섹션 안에 적용되도록 relative 설정 */
+    height: 100vh;       /* 화면 전체 높이 */
+    width: 100vw;        /* 화면 전체 너비 */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+/* 백그라운드에 투명한 색상 오버레이 추가 */
+.class-container .class-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* 검정색 반투명 오버레이 */
+    z-index: 1;
+}
+
+/* 컨텐츠 스타일 */
+.class-container .content-1 {
+    position: relative;
+    z-index: 2; /* 오버레이 위에 텍스트 표시 */
+    max-width: 900px; /* 텍스트 폭 제한 */
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+.class-container .content-2 {
+    position: relative;
+    z-index: 2; /* 오버레이 위에 텍스트 표시 */
+    max-width: 1200; /* 텍스트 폭 제한 */
+    border-radius: 10px;
+    color: white;
+    text-align: right;
+}
+
+/* 큰 헤더 스타일 */
+.class-container h1 {
+    font-size: 8em;
+    line-height: 0.8;
+    font-weight: bold;
+    letter-spacing: 2px; /* 글자 간격 */
+    word-spacing: -15px;
+    text-transform: uppercase; /* 모든 글자를 대문자로 */
+    color: #e0e0e0;
+    margin-top: 0px;
+}
+
+/* 작은 헤더 스타일 */
+.class-container h2 {
+    font-size: 3.5em;
+    line-height: 0.7;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #fbc02d; /* 부드러운 노란색으로 강조 */
+}
+
+/* 본문 텍스트 스타일 */
+.class-container p {
+    font-size: 1.2em;
+    line-height: 1.2;
+    color: #e0e0e0; /* 부드러운 회색으로 텍스트 */
+    margin-bottom: 0px;
+    max-width: 600px; /* 텍스트 폭 제한 */
+}
+
+.class-container span[lang="ko"] {
+    font-size: 0.8em;
+    font-weight: 550;
+    line-height: 1.2;
+    color: #e0e0e0; /* 부드러운 회색으로 텍스트 */
+    margin-bottom: 0px;
+    max-width: 600px; /* 텍스트 폭 제한 */
+}
+
+/* 섹션 간의 여백을 없애기 위한 설정 */
+.class-section + .class-section {
+    margin-top: 0;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.custom-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-5px); /* 호버 시 버튼이 살짝 올라가는 효과 */
 }
 
 @media (max-width: 768px) {
-  .section {
-    height: 50vh; /* 모바일 화면에서 섹션의 높이를 줄임 */
-  }
+    /* 텍스트 크기를 줄여서 화면에 맞추기 */
+    .class-container h1 {
+        font-size: 4em; /* 폰트 크기를 줄여서 글자가 잘 보이게 */
+    }
+
+    .class-container h2 {
+        font-size: 2em;
+    }
+
+    .class-container p {
+        font-size: 1em; /* 본문 텍스트 크기도 줄이기 */
+    }
+
+    .custom-button {
+        font-size: 1em;
+        padding: 10px 20px; /* 버튼 크기도 줄이기 */
+    }
+
+    .class-container {
+        padding: 20px; /* 전체적으로 패딩을 줄여 공간 확보 */
+    }
 }
+
+
+/* 
+Post kramdown text highlight
+========================================================================== */
 
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
@@ -434,6 +573,9 @@ Class page image
   font-weight: bold;
 }
 .highlight .n {
+  color: var(--text-color);
+}
+.highlight .go {
   color: var(--text-color);
 }
 .highlight .p {

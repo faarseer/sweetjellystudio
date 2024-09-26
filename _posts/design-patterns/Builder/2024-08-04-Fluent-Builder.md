@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fluent Builder"
+title:  "Builder 2. Fluent Builder"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png

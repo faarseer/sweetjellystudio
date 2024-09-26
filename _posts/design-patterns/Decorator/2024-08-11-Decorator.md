@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Decorator"
+title: "Decorator 1. Decorator"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png

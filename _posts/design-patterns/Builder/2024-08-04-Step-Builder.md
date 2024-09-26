@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Step Builder"
+title:  "Builder 3. Step Builder"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png

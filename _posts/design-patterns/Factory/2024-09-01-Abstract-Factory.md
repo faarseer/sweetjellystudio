@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Abstract Factory : 여러 개의 객체 생성을 관리"
+title: "Factory 2. Abstract Factory"
 author: SWeetJelly
 categories: [ c#, design pattern]
 image: assets/images/thumbnail.png
