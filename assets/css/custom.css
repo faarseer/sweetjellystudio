@@ -405,7 +405,7 @@ Class page image
 .class-container .content-1 {
     position: relative;
     z-index: 2; /* 오버레이 위에 텍스트 표시 */
-    max-width: 900px; /* 텍스트 폭 제한 */
+    max-width: 800; /* 텍스트 폭 제한 */
     border-radius: 10px;
     color: white;
     text-align: left;
@@ -413,7 +413,7 @@ Class page image
 .class-container .content-2 {
     position: relative;
     z-index: 2; /* 오버레이 위에 텍스트 표시 */
-    max-width: 1200; /* 텍스트 폭 제한 */
+    max-width: 800; /* 텍스트 폭 제한 */
     border-radius: 10px;
     color: white;
     text-align: right;
@@ -485,27 +485,38 @@ Class page image
 }
 
 @media (max-width: 768px) {
-    /* 텍스트 크기를 줄여서 화면에 맞추기 */
-    .class-container h1 {
-        font-size: 4em; /* 폰트 크기를 줄여서 글자가 잘 보이게 */
-    }
 
-    .class-container h2 {
-        font-size: 2em;
-    }
+  /* 컨텐츠 사이즈 조절*/
+  .class-container .content-1 {
+    padding-right: 3vw;
+    padding-left: 2vw;
+  }
+  .class-container .content-2 {
+    max-width: 90vw;
+    padding-right: 7vw; /* 오른쪽 여백 scroll 에 맞춰서 더 옮기기*/
+  }
 
-    .class-container p {
-        font-size: 1em; /* 본문 텍스트 크기도 줄이기 */
-    }
+  /* 텍스트 크기를 줄여서 화면에 맞추기 */
+  .class-container h1 {
+    font-size: 4em; /* 폰트 크기를 줄여서 글자가 잘 보이게 */
+  }
 
-    .custom-button {
-        font-size: 1em;
-        padding: 10px 20px; /* 버튼 크기도 줄이기 */
-    }
+  .class-container h2 {
+    font-size: 2em;
+  }
 
-    .class-container {
-        padding: 20px; /* 전체적으로 패딩을 줄여 공간 확보 */
-    }
+  .class-container p {
+    font-size: 1em; /* 본문 텍스트 크기도 줄이기 */
+  }
+
+  .custom-button {
+    font-size: 1em;
+    padding: 10px 20px; /* 버튼 크기도 줄이기 */
+  }
+
+  .class-container {
+    padding: 5vw; /* 전체적으로 패딩을 줄여 공간 확보 */
+  }
 }
 
 

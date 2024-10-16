@@ -9,16 +9,16 @@ disqus: false
 ---
 
 <div class="section">
-  <img src="/assets/images/Class/Puzzle Post 1.png" alt="Puzzle Post 1">
+  <img src="/assets/images/Class/maze-portrait-1.png" alt="maze portrait 1">
 </div>
 <div class="section">
-  <img src="/assets/images/Class/Puzzle Post 2.png" alt="Puzzle Post 2">
+  <img src="/assets/images/Class/maze-portrait-2.png" alt="maze portrait 2">
 </div>
 <div class="section">
-  <img src="/assets/images/Class/Puzzle Post 3.png" alt="Puzzle Post 3">
+  <img src="/assets/images/Class/maze-portrait-3.png" alt="maze portrait 3">
 </div>
 <div class="section">
-  <img src="/assets/images/Class/Puzzle Post 4.png" alt="Puzzle Post 4">
+  <img src="/assets/images/Class/maze-portrait-4.png" alt="maze portrait 4">
 </div>
 
 ---
