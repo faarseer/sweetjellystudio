@@ -23,4 +23,14 @@ disqus: false
 
 ---
 
-![]({{site.baseurl}}/assets/images/Class/gif-maze-level-edit-x6.gif)
+<div class="video-container">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/m_tTgsX_LNA" 
+    title="YouTube" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>

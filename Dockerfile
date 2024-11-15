@@ -2,7 +2,7 @@
 FROM ruby:2.7
 
 # 작업 디렉토리 설정
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/sweetjellystudio/
 
 # 프로젝트 파일 복사
 COPY Gemfile
