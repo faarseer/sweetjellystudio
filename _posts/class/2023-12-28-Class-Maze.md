@@ -37,7 +37,24 @@ disqus: false
 
 <div class="game-container">
   <iframe 
-    src="/assets/webgl/index.html" 
+    id="game-frame" 
+    src="" 
     class="game-iframe">
   </iframe>
 </div>
+
+<script>
+  // 모바일과 PC를 구분하는 함수
+  function isMobileDevice() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  }
+
+  // PC와 모바일에 따라 적절한 빌드를 설정
+  if (isMobileDevice()) {
+    // 모바일 빌드
+    document.getElementById("game-frame").src = "/assets/webgl/maze mobile/index.html";
+  } else {
+    // PC 빌드
+    document.getElementById("game-frame").src = "/assets/webgl/maze pc/index.html";
+  }
+</script>
