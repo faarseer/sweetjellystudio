@@ -34,3 +34,10 @@ disqus: false
     allowfullscreen>
   </iframe>
 </div>
+
+<div class="game-container">
+  <iframe 
+    src="/assets/webgl/index.html" 
+    class="game-iframe">
+  </iframe>
+</div>
